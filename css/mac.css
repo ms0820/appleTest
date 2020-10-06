@@ -1,0 +1,908 @@
+ #gnb { background-color: rgba(0,0,0,0.8); 
+        position: static;
+        width: 100%; top: 0; left: 0; } 
+
+    
+    /* LNB 스타일 */
+#lnb_mac{padding: 8px 0;
+        height: 100px;
+        background-color: rgba(245, 245, 247, 0.6);}
+
+.lnb_menu {display: flex; width: 1120px; margin: 0 auto; justify-content: space-between;}
+
+.lnb_menu a {text-align: center;}
+
+.lnb_menu a:hover {color: #2997ff; text-decoration: none;}
+
+.lnb_menu span:hover {color: #2997ff; text-decoration: none;}
+
+.lnb_menu span { 
+    display: block;
+    color: rgb(29, 29, 31);
+    font-family: 'SF Pro KR';
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 16px;
+    }
+
+.lnb_menu_icon_macbookair,
+.lnb_menu_icon_macbookpro13,
+.lnb_menu_icon_macbookpro16,
+.lnb_menu_icon_imac,
+.lnb_menu_icon_imacpro,
+.lnb_menu_icon_macpro,
+.lnb_menu_icon_macmini,
+.lnb_menu_icon_maccomp,
+.lnb_menu_icon_macprodisplayxdr,
+.lnb_menu_icon_macacc,
+.lnb_menu_icon_macosx
+{
+    height: 54px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    margin: 0 auto 4px;
+    display: block;
+}
+
+
+
+
+.lnb_menu_icon_macbookair{
+    width: 52px;
+    background-image: url(../mac/img/macbook_air.svg);
+    background-size: 52px 54px;
+}
+
+
+    
+
+.lnb_menu_icon_macbookpro13{
+    width: 54px;
+    background-image: url(../mac/img/macbook_pro_13.svg);
+    background-size: 54px 54px;
+
+}
+
+
+.lnb_menu_icon_macbookpro16{
+        width: 60px;
+        background-image: url(../mac/img/macbook_pro_16.svg);
+        background-size: 60px 54px;
+
+}
+.lnb_menu_icon_imac{
+    width: 48px;
+    background-image: url(../mac/img/imac.svg);
+    background-size: 48px 54px;
+
+}
+.lnb_menu_icon_imacpro{
+    width: 48px;
+    background-image: url(../mac/img/imac_pro.svg);
+    background-size: 48px 54px;
+}
+.lnb_menu_icon_macpro{
+    width: 37px;
+    background-image: url(../mac/img/mac_pro.svg);
+    background-size: 37px 54px;
+}
+.lnb_menu_icon_macmini{
+    width: 28px;
+    background-image: url(../mac/img/macmini.svg);
+    background-size: 28px 54px;
+}
+.lnb_menu_icon_maccomp{
+    width: 70px;
+    background-image: url(../mac/img/mac_comp.svg);
+}
+.lnb_menu_icon_macprodisplayxdr{
+    width: 48px;
+    background-image: url(../mac/img/pro_display_xdr.svg);
+    background-size: 48px 54px;
+}
+.lnb_menu_icon_macacc{
+    width: 29px;
+    background-image: url(../mac/img/mac_acc.svg);
+    background-size: 48px 54px;
+}
+
+.lnb_menu_icon_macosx{
+    width: 42px;
+    background-image: url(../mac/img/mac_osx.svg);
+    background-size: 42px 54px;
+}
+
+
+
+.lnb_menu li .lnb_menu_span_new{
+    color: rgb(191, 72, 0);
+    font-family: 'SF Pro KR';
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 12px;
+}
+
+
+    /* .lnb_menu_span_new {
+   color:rgb(191,72,0);
+   font-family:'SF Pro KR';
+   font-size:10px;
+   font-weight: 400;
+   font-style: normal;
+   line-height: 12px;; } */
+
+
+
+/* Mac 알림 배너 스타일 */
+
+#mac_banner p {
+    padding: 9px 0;
+    text-align: center;
+    background: rgb(242, 242, 242); color: rgb(51, 51, 51);
+      
+}
+
+#mac_banner p span{
+    color: rgb(0, 102, 104);
+}
+
+
+
+/* Mac Page Common Style */
+
+.hero_imac_wrap,
+.hero_macbookair_wrap,
+.hero_macbookpro_wrap{
+   width: 980px;
+   margin: 0 auto;
+   display:flex;
+   align-items: center;
+   padding:60px 0;
+   
+}
+
+
+.button{
+    display: inline-block;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.2;
+    background: #0071e3;
+    background-size: auto;
+    color: #fff !important;
+
+    font-family: 'SF Pro KR', 'SF Pro Display',sans-serif;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 18px;
+}
+
+
+
+ /* Hero iMac STYLE */
+ 
+
+ .hero_imac_text{
+    width: 33.3333%;
+    display: block;
+    text-align: left;
+    padding-bottom: 100px ;
+
+ }
+
+ .hero_imac_image{
+     width: 66.6667%;
+     display: block;
+ }
+
+ .hero_imac_image figure{
+     background-image: url('../mac/img/hero/imac.jpg');
+     width: 726px;
+     height: 550px;
+     background-size: 726px 550px;
+     margin-left: -14px;
+ }
+
+.hero_imac_text span{
+    display: block;
+    margin: 0 0 4px;
+    font-weight: 600; 
+    font-family: 'SF Pro KR', 'SF Pro Display',sans-serif;
+
+}
+.hero_imac_text span:first-child {
+    font-family: 'SF Pro KR', 'SF Pro Display',sans-serif;
+    color: rgb(245, 99, 0);
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 6.3px;
+ }
+
+ .hero_imac_text span:nth-child(2){
+     margin-bottom: 8.4px;
+ }
+
+.subhead-21{
+    font-size: 21px; 
+    -webkit-font-smoothing: antialiased;
+    line-height: 29px;
+}
+
+.sub-text {
+    display: block;
+    font-family: 'SF Pro KR', 'SF Pro Display',sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 31px; 
+    margin-bottom: 28.8px;
+}
+
+.link-buy{
+    text-align: left;
+}
+
+
+.more-link{
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+  
+    text-align: left;
+    font-family: 'SF Pro KR', 'SF Pro Display',sans-serif;
+    display: block;
+    color:  rgb(0, 102, 204);
+    
+    
+}
+
+.more-link a{
+    color:  rgb(0, 102, 204);
+    padding-right: 6px;
+}
+
+.more-link-icon{
+    font-family: 'SF Pro Icons';
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(0, 102, 204);
+    display: inline-block;
+    font-size: 21px;
+    padding-left: 6.3px;
+}
+
+
+
+/* Hero MacBook-Air Style */
+
+.hero_macbookair_wrap{
+    padding-top: 133px;
+}
+
+.hero_macbookair_image{
+    display: block;
+    width: 66.6667%;
+}
+.hero_macbookair_image figure{
+    background-image: url('../mac/img/hero/macbook_air.jpg');
+    background-size: 983px 150px;
+    width: 983px;
+    height: 150px;
+    margin-left: -409px;
+}
+
+.hero_macbookair_text{
+    width: 33.3333%;
+    display: block;
+    text-align: left; 
+}
+
+
+/* Hero MacBook-Pro Style */
+
+.hero_macbookpro_wrap{
+    padding-top: 102px;
+} 
+.hero_macbookpro_image{
+    box-sizing: border-box;
+    display: block;
+    width: 66.6667%;
+}
+.hero_macbookpro_image figure{
+    background-image: url(../mac/img/hero/macbook_pro_13.jpg);
+    background-size: 647px 232px;
+    width: 647px;
+    height: 232px; 
+    margin-left: 34px;
+   }
+
+.hero_macbookpro_text{
+    width: 33.3333%;
+    display: block;
+    text-align: left;  
+}
+.hero_macbookpro_text h2{  
+    width: 400px; 
+}
+
+.hero_macbookpro_text span{
+    display: block;
+    line-height: 29px;
+    margin: 0 0 4px;
+    font-weight: 600; 
+    font-family: 'SF Pro KR', 'SF Pro Display',sans-serif; 
+}
+ 
+
+
+/*  MacBook Comp STYLE  */
+ 
+ 
+#banner-compare-section{
+    /* border: 1px dashed deeppink; */
+    /* background-color: red; */
+    display: block;
+    padding-top: 150px;
+    text-align: center;
+     height: 1180px;
+     margin-bottom: 30px;
+     width: 1380px;
+     margin-left: auto;
+     margin-right: auto;
+
+ }
+
+.banner-container{
+    /* border: 1px dashed dodgerblue; */
+    /* background-color: lightskyblue; */
+    display: block;
+    margin: 0 auto;
+    width: 1440px;
+     -webkit-font-smoothing:antialiased;
+
+     
+}
+
+.banner-promo{
+    width: 1380px;
+     -webkit-box-pack: justify;
+    justify-content: space-between;
+    /* border: 1px solid firebrick; */
+    background-color:rgb(242, 242, 242);
+    display: flex;
+  margin: 0 auto;
+    padding: 114px 0 0 0;
+}
+
+
+.secton-content{
+    display: block; 
+    width: 980px;
+    margin: 0 auto;
+ }
+
+ 
+
+/* compare headline */
+
+ .headline_compare{
+     display: block;
+     flex-basis: 66.6667%;
+     font-size: 64px;
+     font-weight: 600;
+     font-style: normal;
+     line-height:75px;
+     width: 653px;
+     margin-bottom: 60px;
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+  }
+
+
+/* compare-link */
+
+.compare_link_wrap {
+    text-align: center;
+    display: block;
+    margin-bottom: 75px;
+    margin-top: 60px;
+    width: 980px;
+}
+ 
+
+.compare_link_wrap a{
+    color: rgb(0, 102, 204);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'SF Pro KR', 'SF Pro Display', sans-serif;
+    line-height: 32px;
+ }
+
+.compare_link_wrap_icon{
+    padding-left: 6px;
+}
+
+
+ /* compare-table */
+
+ .compare-table{
+      /* model-wrap와 같은것 */
+    display: flex;
+    width: 1380px;
+    font-family: 'SF Pro KR', 'SF Pro Display', sans-serif;
+    margin: 0 auto;
+    width: 100%;
+    height: 671px; 
+    align-items: flex-end;
+    padding-bottom: 80px;
+  }
+
+/* compare1 최상위로 모두 감싸주는 부분*/
+ .compare_1{
+     display: block;
+     width: 33.33333%;
+     flex-basis: 33.33333%;
+     margin: 0;
+     padding: 0;
+ }
+
+ .compare_1_content{
+    display: block;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 980px;
+    height: 1066px;
+ }
+
+
+.compare_1_wrapper{
+    display: flex;
+    height: 100%;
+}
+
+
+ .header-wrapper{
+     display: block; 
+   }
+
+ .compare_1_headline {
+     display: block;
+     font-size: 24px;
+     font-weight: 600;
+     font-family: 'SF Pro KR', 'SF Pro Display';
+     line-height: 31px;
+     text-align: left;
+     width: 286px;
+      margin-bottom: 4px; 
+ }
+
+
+ .copy_pricing{
+     display: block;
+     width: 286px;
+     font-size: 14px;
+     font-weight: 600;
+     line-height: 22px;
+     font-family: 'SF Pro KR',sans-serif;
+     text-align: left;
+     margin-top: 0;
+     letter-spacing: normal;
+  }
+
+ .compare_1_img{
+    display: block; 
+    background-size: 286px 168px;
+    width: 286px;
+    height: 168px;
+    background-repeat: no-repeat;
+    background-image: url('../mac/img/compare/macbook_air.jpg');
+    margin-bottom: 30px;
+    margin-left: -27px;     
+ }
+ 
+ .compare_2_img{
+    display: block; 
+    background-size: 286px 168px;
+    width: 286px;
+    height: 168px;
+    background-repeat: no-repeat;
+    background-image: url('../mac/img/compare/macbook_pro_13.jpg');
+    margin-bottom: 30px;
+    margin-left: -27px;  
+ }
+
+ .compare_3_img{
+    display: block; 
+    background-size: 334px 194px;
+    width: 334px;
+    height: 194px;
+    background-repeat: no-repeat;
+    background-image: url('../mac/img/compare/macbook_pro_16.jpg');
+    margin-bottom: 30px;
+    margin-left: -27px;  
+ }
+
+
+
+ .macbook_comp_1_list{
+     display: block;
+     width: 286px;
+     height: 247px;
+     font-size: 14px;
+     font-weight: 400;
+     font-family: 'SF Pro KR',sans-serif;
+     line-height: 22px;
+     margin-top: 56px;
+     margin-left: 0;
+     text-align: left;
+     padding: 0;
+ }
+
+
+ .macbook_comp_1_list li{
+     line-height: 22px;
+     list-style-image: none;
+     list-style-position: outside;
+     list-style-type: none;
+    margin-top: 16px;
+    text-align: left;
+ }
+
+ .comp_1_link_wrapper{
+     display: block;
+     width: 286px;   
+     margin: 34px 0 20px;
+ }
+
+ .button_wrapper{
+     display: block;
+     font-family: 'SF Pro KR',sans-serif;
+     font-size: 17px;
+     font-style: normal;
+     height: 27.2px;
+ 
+     text-align: left;
+     -webkit-font-smoothing : antialiased;
+ }
+
+ .button_wrapper a{
+    background-color: rgb(0, 113, 227);
+    background-image: none;
+    background-origin: padding-box;
+    background-size: auto;
+    border-radius: 12px;
+    padding-bottom: 4px;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 4px;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    text-decoration: none;
+    
+ }
+
+
+.button_wrapper a:hover{
+    background: rgba(0, 113, 227, .8);
+}
+
+
+ .comp_more_link{
+    font-size: 14px;
+    display: block;
+    font-family: 'SF Pro KR', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    margin-top: 14px;
+  }
+
+ .comp_more_link a {
+    color: rgb(0, 102, 204);
+    
+ }
+
+ .comp_more_link:hover{
+     text-decoration: underline;
+ }
+
+
+ /*----- compare 1 END -----*/
+/* 전체 감싸는 내용은 똑같이 두고, 번호 구분을 지울것,*/
+
+
+
+
+/* macos bigsur section */
+.banner-bigsur-wrap{
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.banner-content{
+    margin: 0 auto;
+    text-align: center;
+    width: 1380px;
+    height: 600px;
+     background-size: 1380px 600px;
+    background: url('../mac/img/macos/macos_bigsur.jpg') no-repeat bottom center ;
+}
+
+.banner-copy-wrap{
+    padding-top: 200px;
+     width: 980px;
+     display: block; 
+     margin-left: 200px;
+ }
+
+.bigsur-logo{
+    width: 165px;
+    height: 26px;
+    background-size: 165px 26px;
+    background: url('../mac/img/macos/big_sur_logo.png') no-repeat;
+   margin: 0 auto;
+  text-align: center;
+}
+
+
+
+.banner-copy-wrap h3 {
+    font-family: 'SF Pro KR', 'SF Pro Display',sans-serif; 
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 57px;
+    margin-top: 19px;
+}
+
+.banner-link-wrap a{
+    margin-top: 13px;
+    color: rgb(245, 245, 247);
+    font-size: 17px;
+    line-height: 27px;
+}
+
+
+/* guide_acc_trade Style */
+ 
+.guide_wrapper{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 1380px; 
+}
+
+.mac_acc-wrap{
+    width: 50%;
+    height: 676px;
+    background-size:  auto ;
+    background-image: url('../mac/img/accessories.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom; 
+    margin-right: 15px;
+    padding-top: 60px;
+    margin-bottom: 30px;
+    background-color: rgb(242, 242, 242);
+
+}
+
+.mac_acc_copy h2, .trade-wrap h2  {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 31px;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.acc_button{
+    margin-top: 13px;
+}
+
+ .guide_sub_head{
+    font-family: 'SF Pro KR', 'SF Pro Text', sans-serif;
+    font-style: normal;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 57px;
+ }
+ 
+
+.trade-wrap{
+    width: 50%;
+    height: 676px;
+    background-size:  auto ;
+    background-image: url('../mac/img/trade_in_mac.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-top: 60px;
+    background-color: rgb(242, 242, 242)
+}
+
+ 
+
+.h3_17 {
+    font-family: 'SF Pro KR', 'SF Pro Text', sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 27px;
+    margin-top: 20px;
+    max-width: 430px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+     margin-left: auto;
+    margin-right: auto;
+}
+
+.trade-more-link{
+    color: rgb(0, 102, 204);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13px;
+    font-family: 'SF Pro KR', 'SF Pro Text', sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+}
+
+.trade-more-link a{
+    color: rgb(0, 102, 204);
+}
+
+.trade-more-link a:hover{
+    text-decoration: underline;
+}
+
+
+/* guide_alert_del_fin Style */
+.guide_alert_wrap{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 1380px; 
+    padding-top: 52px;
+}
+ 
+.delevery{
+    width: 50%;
+    height: 218px;
+   
+     
+}
+.financing{
+    width: 50%;
+    height: 218px;
+   
+}
+
+.delevery_icon figure {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+    width: 40px;
+    height: 44px;
+    display: block;
+    text-align: center;
+    background-size: 40px 44px;
+    background: url('../mac/img/icon/icon-delivery.png') no-repeat;
+}
+
+
+.financing_icon {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.financing_icon figure {
+  
+    height: 73px;
+    display: block;
+    text-align: center;
+    background-size: 100% 73px;
+    background: url('../mac/img/icon/icon-finance.svg') no-repeat;
+}
+
+
+
+.del_fin_head{
+    font-family: 'SF Pro KR', 'SF Pro Text', sans-serif;
+    font-style: normal;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.del_fin_sub{
+    font-family: 'SF Pro KR', 'SF Pro Text', sans-serif;
+    font-style: normal;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+
+
+
+.guide-link-center {color: rgb(0, 102, 204);}
+.guide-link-center a{
+    font-family: 'SF Pro KR', 'SF Pro Text', sans-serif;
+    font-style: normal;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 32px;
+   color: rgb(0, 102, 204);
+    text-align: center;
+    line-height: 32px;
+}
+
+
+/* About Mac Section Style */
+
+
+#aboutmac{ padding-top: 150px;}
+
+.aboutmac_title{
+    display: block;
+    margin: 0 auto;
+    width: 980px;
+    text-align: center;
+}
+
+.title-typo { 
+    font-family: 'SF Pro KR', 'SF Pro Text', sans-serif;
+    font-style: normal;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 75px; 
+}
+
+
+.margin80{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;}
+
+.catalina_content{
+     margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    background-size: 1380px 600px;
+    width: 1380px;
+    height: 600px;
+    background-image: url('../mac/img/macos/catalina.jpg');
+    background-repeat: no-repeat;
+}
+
+.catalina_logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 186px;
+    height: 23px;
+    background-size: 186px 23px;
+    background-repeat: no-repeat;
+    background-image: url(../mac/img/macos/catalina_log.png);
+}
+
+.catalina_copy_wrap{
+    display: block;
+    text-align: center;
+    top: 300px
+}

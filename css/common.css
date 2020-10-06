@@ -1,0 +1,728 @@
+
+/* 초기화 스타일 CSS */
+
+
+* { margin:0 ;  }
+
+ul {list-style: none;}
+li {padding: 0; margin: 0;}
+
+body { color:rgb(29,29,31); overflow-x: hidden;}
+
+
+/*      font     */
+ 
+@font-face{
+    font-family: 'SF Pro KR';
+    font-style: normal;
+    font-weight: 200;
+    src: url(../font/SFProKRDisplay_light.woff2) format('woff2');
+}
+
+
+
+@font-face{
+    font-family: 'SF Pro KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/SFProKRDisplay_regular.woff2) format('woff2');
+}
+
+@font-face{
+    font-family: 'SF Pro KR';
+    font-style: normal;
+    font-weight: 600;
+    src: url(../font/SFProKRDisplay_semibold.woff2) format('woff2');
+}
+
+@font-face{
+    font-family: 'SF Pro KR';
+    font-style: normal;
+    font-weight: 800;
+    src: url(../font/SFProKRDisplay_bold.woff2) format('woff2');
+}
+
+
+/* 영문 */
+@font-face{
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/sf-pro-display_semibold.woff2) format('woff2');
+}
+
+
+@font-face{
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    src: url(../font/sf-pro-display_semibold.woff2) format('woff2');
+}
+
+
+/* p tag는 SF Pro Text를 썼다. */
+@font-face{
+    font-family: 'SF Pro Text';
+    font-weight: 400;
+    font-style: normal;
+    src: url(../font/sf-pro-text_regular.woff) format('woff2');
+}
+
+@font-face{
+    font-family: 'SF Pro Text';
+    font-weight: 600;
+    font-style: normal;
+    src: url(../font/sf-pro-text_semibold.woff) format('woff2');
+}
+
+/* font icon */
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 200;
+    font-style: normal;
+    src: url(../font/SFProIcons_light.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'SF Pro Icons';
+    font-weight: 400;
+    font-style: normal;
+    src: url(../font/SFProIcons_regular.woff) format('woff');
+}
+
+
+/*
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('/font/NotoSansKR-Regular.otf')
+}*/
+
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap'); 
+
+     
+
+
+    /*      Typo 스타일     */ 
+     h2 { 
+        font-family: 'SF Pro KR' ,'SF Pro Display', serif;
+        font-size:56px;
+        font-weight:600;
+        font-style: normal;
+        line-height: 66px;
+        -webkit-font-smoothing: antialiased;
+        /* 브라우저들 마다 CSS를 (완전 표준은X) 제공되는 브라우저들이
+        스스로 개발해서 브라우저에 적용 가능한 벤더프리픽스를 붙여줌으로
+        옵션값을 주면 폰트를 랜더링 할 때 브ㅡ라우저가 좀 더 부드럽게 렌더링 한다. */
+        }
+     h3 {  
+        font-family:'SF Pro KR','SF Pro Display', serif;
+        font-size:28px;
+        font-weight:400;
+        font-style: normal;
+        line-height: 31px;
+        -webkit-font-smoothing: antialiased;
+
+        }
+     h4 { 
+           font-family: 'SF Pro KR', sans-serif;
+           font-size : 32px;   
+           font-weight:600;
+           font-style: normal;
+           line-height: 36px;
+       }
+     h5 { 
+        font-family: 'SF Pro KR', sans-serif;
+           font-size : 19px;   
+           font-weight:400;
+           font-style: normal;
+           line-height: 36px;
+       }
+ 
+     /* h6 { } */
+    
+     p {          
+        font-family: 'SF Pro KR', 'SF Pro Text', sans-serif;
+        font-size:12px;
+        font-weight:400;
+        font-style: normal;
+        line-height: 16.8px;  
+        -webkit-font-smoothing: antialiased;
+
+        }
+
+    .h4_large_40 { 
+        font-family: 'SF Pro KR', 'SF Pro Display' sans-serif;
+        font-size:40px;
+        font-weight:600;
+        font-style:normal;
+        line-height:44px;
+        -webkit-font-smoothing: antialiased;
+
+    }
+    
+        .h5_large_21 { 
+        font-family: 'SF Pro KR','SF Pro Display', sans-serif;
+        font-size:21px;
+        font-weight:400;
+        font-style:normal;
+        line-height:26px;
+        -webkit-font-smoothing: antialiased;
+    
+    }
+    
+        .p_large_17 {
+        
+        font-family: 'SF Pro KR','SF Pro Text', sans-serif;
+        font-size:17px;
+        font-weight:400;
+        font-style: normal;
+        line-height: 27px;  }
+         
+ 
+        /* a의 hover 상태인 css가 우선이 되는것 
+             클래스 네임을 줘서 해도 작동이 안하는 것
+             방법
+             클래스에 이름을 지정해서 하는 방법과
+ 
+             가상 클래스
+ 
+        Outline을 보면 
+        부모 자식 관계가 나온다.
+ 
+        */
+ 
+     /*     링크 스타일    */   
+     a:link {  text-decoration: none; color:#2997ff; }
+     a:hover {   text-decoration: none; color:#2997ff; }
+     a:active {  text-decoration: none; color:#2997ff; }
+     a:visited {  text-decoration: none; color:#2997ff; }
+
+     .text_decoration_none {text-decoration:none;}
+
+
+            /*정렬*/
+
+    .align-items-center{align-items: center;}
+     .text_align_left {text-align: left;}
+     .text_align_center {  text-align: center; }
+
+     .margin_center{margin: 0 auto;}
+
+     /* 컬러 관련 스타일 */
+
+     .bg_color_white { background-color:white;  }
+     .bg_color_dark { background-color:rgb(19,19,19);}
+     .bg_color_gray_250 { background-color:rgb(250,250,250);} 
+     .bg_white_242 {background-color: rgb(242, 242, 242);}      
+ 
+     .color_white_245 { color:rgb(245,245,247);} 
+     .color_gray_134 {color: rgb(134,134,139);}  
+ 
+
+     /* 여백 관련 스타일 */
+     .margin_top_6 { margin-top:6px;}
+     .margin_top_7 { margin-top:7px;}
+     .margin_top_14 { margin-top:14px;}
+     .margin_bottom_12 { margin-bottom:12px;}
+         
+
+
+    /*      Header 부분 스타일      */
+
+
+    /* gnb 스타일 */
+     #gnb { background-color: rgba(0,0,0,0.8); 
+        position: fixed;
+        width: 100%; top: 0; left: 0; } 
+
+            
+
+    /* Navigation 클래스  */
+
+    .nav_menu { 
+        list-style:none;
+        display: flex;
+        justify-content: space-between; /*flex 가로로 붙여줄 때 옵션 flex-start : 왼쪽에 붙여주는 
+        flex-end : 정렬이 바뀜, 이번 시간에 쓸 것은 space-between
+        space-between을 주게되면 자동으로 처음과 끝을 인식하고 (980만큼의 박스 속에서)
+        각각의 요소를 양쪽 끝에 붙이고, 각각의 요소를 간격이 일정하도록 벌려 주는것
+        아래 요소의 마진 값을 없앨것
+        
+
+        요소 css보다 class css가 먼저 적용된다
+
+        */
+        width: 980px;
+        height: 44px;
+        margin: 0 auto;
+        padding:0; }
+    .nav_menu_logo { line-height: 44px; opacity: 0.8; }
+    .nav_menu_logo:hover { opacity: 1; }
+    .nav_menu_item {
+       /* margin: 0 0 0 80px; */
+       font-family: 'SF Pro KR', sans-serif;
+       font-size:14px;
+       font-weight:400;
+       font-style:normal;
+       line-height:44px;
+       color:rgb(245,245,247);
+       opacity: 0.8; 
+       text-decoration: none;
+       }
+
+    .nav_menu li {text-decoration: none;}
+    /*nav_menu 자식중에 li를 찾아서 속성을 줘라
+       가상 클래스
+       css selector
+       클래스 네임으로 효과를 주는것보다 우선순위가 높다
+    */   
+
+    /* .nav_menu a:last-child {
+        display: none;
+    } */
+
+    .nav_menu_item:hover {text-decoration: none; opacity: 1;}
+
+
+
+
+
+        /*  푸터 부분 스타일  */
+    footer {background-color: rgb(245, 245, 247);} 
+
+      
+    /* 푸터 클래스 */
+    .footer_wrap{
+        width:1000px;
+        padding : 0 10px;
+        margin: 0 auto;
+    }
+
+    .footer_note{
+        padding: 17px 0 11px; /*위 오른졲왼쪽 아래*/
+        border-bottom: 1px solid rgb(210, 210, 215);
+        /*아랫쪽에 선 그리고 싶을 때  */
+        color: rgb(134,134,139);
+    }    
+
+    .footer_menu {
+        display: flex;
+        padding: 20px 0;
+    }
+
+    .footer_menu_column {
+        width: 196px;
+        /* 980/5 = 196 넓이대로 정렬  */
+    }
+
+    .footer_menu_group {
+        list-style: none;
+        padding: 0;
+        font-size: 12px;
+        font-family: 'SF Pro KR', sans-serif; 
+        font-weight:400;
+        font-style: normal;
+        line-height: 16px;  
+        color: rgb(81, 81, 84);
+    }
+
+    .footer_menu_item{
+        margin: 0 0 6.8px;
+     }
+    
+    /* 0903
+    .footer_menu_item_text{
+       color: green;
+    }
+ */
+
+
+
+    /* 자식요소중 li를 찾아서 값을 줘라*/
+    .footer_menu_group li { margin: 0 0 6.8px; color: rgb(134, 134, 139);}
+    /* li들 중 첫번째 자식만 찾아서 */
+    .footer_menu_group li:first-child {
+        color: rgb(29, 29, 31);
+        font-weight: 600;
+     
+    }
+    .footer_menu_group li:first-child span {
+        display: none;
+        }
+
+/*  0903
+    이렇게 한 칸 띄면 자손을 지정
+    li는 직계 자손
+    a는 손자뻘이지만 자손에 들어간다.
+    css 셀렉터로 지정한 것이
+    링크 상태값 보다 우선순위가 높아진다 */
+   .footer_menu_group a { color: rgb(134, 134, 139);}
+   .footer_menu_group a:hover { color: rgb(81, 81, 84)}
+
+
+
+    .font-weight_600{
+        font-weight: 600;
+    }
+
+    .color_gray_292931{
+        color: rgb(29, 29, 31);
+    }
+
+    .footer_contact {
+        border-bottom: 1px solid rgb(210, 210, 215);
+        padding: 0 0 7px;
+        margin: 0 0 8px;
+        color: rgb(134,134,139);
+    }
+
+
+    .footer_copyright_wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* footer_global */
+
+
+    .footer_copyright {
+         padding: 0 0 7px;
+        margin: 5px 0;
+        color: rgb(134,134,139);
+    }
+
+    /* 그냥 a는 링크 상태와 같다. */
+    .footer_copyright a {color: rgb(134, 134, 139);
+        padding: 0 12px 0  ;
+        border-right: 1px solid rgb(134, 134, 139);
+    
+    }
+    .footer_copyright a:link{color: rgb(134, 134, 139);} 
+    .footer_copyright a:hover {color: rgb(29, 29, 31); 
+      }
+
+    .footer_address{
+        font-size: 11px;
+        font-family: 'SF Pro KR', sans-serif; 
+        font-weight:400;
+        font-style: normal;
+        line-height: 15px;  
+        color:  rgb(134,134,139);
+        padding : 0 0 20px; /*위 좌우 아래*/
+    }
+
+
+
+#gnb_m {
+    display: none;
+}
+
+
+/* CSS Selector Practice */
+/* #gnb ul {border: 1px solid red;} */
+/* #gnb li {border: 1px solid red;} */
+/* .nav_menu a:nth-child(even) {} */
+
+
+
+    /* 모바일 해상도 CSS Style  */
+@media screen and (max-width:767px) {
+  /*      Typo 스타일     */ 
+  h2 { 
+    font-family: 'SF Pro KR' ,'SF Pro Display', serif;
+    font-size: 48px;
+    font-weight:600;
+    font-style: normal;
+    line-height: 60px;
+    -webkit-font-smoothing: antialiased;
+    /* 브라우저들 마다 CSS를 (완전 표준은X) 제공되는 브라우저들이
+    스스로 개발해서 브라우저에 적용 가능한 벤더프리픽스를 붙여줌으로
+    옵션값을 주면 폰트를 랜더링 할 때 브ㅡ라우저가 좀 더 부드럽게 렌더링 한다. */
+    }
+ h3 {  
+    font-family:'SF Pro KR','SF Pro Display', serif;
+    font-size:19px;
+    font-weight:400;
+    font-style: normal;
+    line-height: 29px;
+    -webkit-font-smoothing: antialiased;
+
+    }
+ h4 { 
+       font-family: 'SF Pro KR', sans-serif;
+       font-size : 32px;   
+       font-weight:600;
+       font-style: normal;
+       line-height: 36px;
+   }
+ h5 { 
+    font-family: 'SF Pro KR', sans-serif;
+       font-size : 19px;   
+       font-weight:400;
+       font-style: normal;
+       line-height: 36px;
+   }
+
+ /* h6 { } */
+
+ p {          
+    font-family: 'SF Pro KR', 'SF Pro Text', sans-serif;
+    font-size:12px;
+    font-weight:400;
+    font-style: normal;
+    line-height: 16.8px;  
+    -webkit-font-smoothing: antialiased;
+
+    }
+
+.h4_large_40 { 
+    font-family: 'SF Pro KR', 'SF Pro Display' sans-serif;
+    font-size:36px;
+    font-weight:600;
+    font-style:normal;
+    line-height:44px;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+    .h5_large_21 { 
+    font-family: 'SF Pro KR','SF Pro Display', sans-serif;
+    font-size:19px;
+    font-weight:400;
+    font-style:normal;
+    line-height:26px;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+    .p_large_17 {
+    
+    font-family: 'SF Pro KR','SF Pro Text', sans-serif;
+    font-size:15px;
+    font-weight:400;
+    font-style: normal;
+    line-height: 27px;  }
+    .nav_menu_m {
+        width: 400px; padding: 0 16px;
+    }
+
+    /* 
+
+    .nav_menu a{
+        display: none;
+    }
+
+     .nav_menu a:first-child {
+        display: block;
+    }
+
+    .nav_menu a:last-child {
+        display: block;
+    } */
+
+    #gnb { display: none;}
+    #gnb_m {display: flex;}
+
+
+     /* gnb 스타일 */
+     #gnb_m { background-color: rgba(0,0,0,0.8); 
+        position: fixed;
+        width: 100vw; top: 0; left: 0; } 
+
+            
+
+    /* Navigation 클래스  */
+
+    .nav_menu_m { 
+        list-style:none;
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        height: 44px;
+        margin: 0 auto;
+        padding:0; }
+    .nav_menu_m_logo { line-height: 27px; opacity: 0.8; }
+    .nav_menu_m_logo:hover { opacity: 1; }
+    .nav_menu_m_item {
+       /* margin: 0 0 0 80px; */
+       font-family: 'SF Pro KR', sans-serif;
+       font-size:14px;
+       font-weight:400;
+       font-style:normal;
+       line-height:44px;
+       color:rgb(245,245,247);
+       opacity: 0.8; 
+       text-decoration: none;
+       }
+
+    .nav_menu_m li {text-decoration: none;}
+    /*nav_menu 자식중에 li를 찾아서 속성을 줘라
+       가상 클래스
+       css selector
+       클래스 네임으로 효과를 주는것보다 우선순위가 높다
+    */   
+
+    /* .nav_menu a:last-child {
+        display: none;
+    } */
+
+    .nav_menu_m_item:hover {text-decoration: none; opacity: 1;}
+
+
+
+          /*  푸터 부분 스타일  */
+          footer {background-color: rgb(245, 245, 247);} 
+
+
+          /* 푸터 클래스 */
+          .footer_wrap{
+              width:1000px;
+              padding : 0 10px;
+              margin: 0 auto;
+          }
+      
+          .footer_note{
+              padding: 17px 0 11px; /*위 오른졲왼쪽 아래*/
+              border-bottom: 1px solid rgb(210, 210, 215);
+              /*아랫쪽에 선 그리고 싶을 때  */
+              color: rgb(134,134,139);
+          }    
+      
+          .footer_menu {
+              display: flex;
+              padding: 20px 0;
+              flex-wrap: wrap;
+          }
+      
+          .footer_menu_column {
+              width: 100%;
+              /* 980/5 = 196 넓이대로 정렬  */
+          }
+      
+          .footer_menu_group {
+              list-style: none;
+              padding: 0;
+              font-size: 12px;
+              font-family: 'SF Pro KR', sans-serif; 
+              font-weight:400;
+              font-style: normal;
+              line-height: 16px;  
+              color: rgb(81, 81, 84);
+              height: 10px;
+              overflow: hidden;
+              margin :0 0 20px 0;
+              padding: 0 0 10px 0;
+              border-bottom: 1px solid rgba(134, 134, 139, 0.4);
+          }
+      
+          .footer_menu_item{
+              margin: 0 0 6.8px;
+           }
+          
+          /* 0903
+          .footer_menu_item_text{
+             color: green;
+          }
+       */ 
+      
+          /* 자식요소중 li를 찾아서 값을 줘라*/
+          .footer_menu_group li { margin: 0 0 6.8px; color: rgb(134, 134, 139);}
+          /* li들 중 첫번째 자식만 찾아서 */
+          .footer_menu_group li:first-child {
+              color: rgb(81,81,81);
+              font-weight: 600;
+              display: flex;
+              justify-content: space-between;
+              padding:  0 10px 0 0;
+            }
+            .footer_menu_group li:first-child span {
+                display: block;
+            }
+      
+      /*  0903
+          이렇게 한 칸 띄면 자손을 지정
+          li는 직계 자손
+          a는 손자뻘이지만 자손에 들어간다.
+          css 셀렉터로 지정한 것이
+          링크 상태값 보다 우선순위가 높아진다 */
+         .footer_menu_group a { color: rgb(134, 134, 139);}
+         .footer_menu_group a:hover { color: rgb(81, 81, 84)}
+      
+      
+      
+          .font-weight_600{
+              font-weight: 600;
+          }
+      
+          .color_gray_292931{
+              color: rgb(29, 29, 31);
+          }
+      
+          .footer_contact {
+              border-bottom: 1px solid rgb(210, 210, 215);
+              padding: 0 0 7px;
+              margin: 0 0 8px;
+              color: rgb(134,134,139);
+              word-break:keep-all;
+          }
+          /* 띄어쓰기 한단어를 뒤로 넘겨 보내는것 쫴 */
+      
+      
+          .footer_copyright_wrap{
+              display: flex;
+              justify-content: space-between;
+              flex-direction: column-reverse;
+              
+          }
+
+          .footer_copyright_wrap span {
+              display: block;
+              margin: 6px 0;
+          }
+      
+          /* footer_global */
+      
+      
+          .footer_copyright {
+               padding: 0 0 7px;
+              margin: 5px 0;
+              color: rgb(134,134,139);
+          }
+      
+          /* 그냥 a는 링크 상태와 같다. */
+          .footer_copyright a {color: rgb(134, 134, 139);
+              padding: 0 12px 0;
+              margin: 0 12px 0 0;
+              border-right: 1px solid rgb(134, 134, 139);
+          
+          }
+          .footer_copyright a:link{color: rgb(134, 134, 139);} 
+          .footer_copyright a:hover {color: rgb(29, 29, 31); 
+            }
+      
+          .footer_address{
+              font-size: 11px;
+              font-family: 'SF Pro KR', sans-serif; 
+              font-weight:400;
+              font-style: normal;
+              line-height: 15px;  
+              color:  rgb(134,134,139);
+              padding : 0 0 20px; /*위 좌우 아래*/
+          }
+          
+          .footer_address span{
+              display: block;
+          }
+          
+      
+
+
+
+
+
+}
