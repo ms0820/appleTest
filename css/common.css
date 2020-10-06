@@ -581,7 +581,7 @@ body { color:rgb(29,29,31); overflow-x: hidden;}
 
           /* 푸터 클래스 */
           .footer_wrap{
-              width:1000px;
+              width:100%;
               padding : 0 10px;
               margin: 0 auto;
           }
